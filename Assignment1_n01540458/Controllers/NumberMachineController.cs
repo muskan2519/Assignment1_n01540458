@@ -24,6 +24,10 @@ namespace Assignment1_n01540458.Controllers
         /// /api/NumberMachine/10
         /// <returns>220, 0, 50, 1000</returns>
         /// </example>
+        /// <example>
+        /// /api/NumberMachine/5
+        /// <returns>165, -5, 25, 125</returns>
+        /// </example>
         public string Get(int id)
         {
             int firstOperation = (id + 10) * 11;

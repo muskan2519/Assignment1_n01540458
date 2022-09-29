@@ -27,6 +27,14 @@ namespace Assignment1_n01540458.Controllers
         /// Total = $6.215 CAD
         /// </returns>
         /// </example>
+        /// <example>
+        /// /api/NumberMachine/41
+        /// <returns>
+        /// 3 fortnights at $5.50/FN = $16.5 CAD
+        /// HST 13% = $2.145 CAD
+        /// Total = $18.645 CAD
+        /// </returns>
+        /// </example>
         public IEnumerable<string> Get(int id)
         {
             int numberOfFortnights = (id / 14) + 1;
